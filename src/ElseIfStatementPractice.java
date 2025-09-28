@@ -26,11 +26,9 @@ public class ElseIfStatementPractice {
         // Your code here:
         if (score >= 90) {
             System.out.println("A grade");
-        }
-        else if (score >= 80) {
+        } else if (score >= 80) {
             System.out.println("B grade");
-        }
-        else if (score >= 70) {
+        } else if (score >= 70) {
             System.out.println("C grade");
         } else {
             System.out.println("F grade");
@@ -49,7 +47,7 @@ public class ElseIfStatementPractice {
             System.out.println("Child");
         } else if (age <= 20) {
             System.out.println("Teenager");
-        }else if (age <= 60) {
+        } else if (age <= 60) {
             System.out.println("Adult");
         } else {
             System.out.println("Senior");
@@ -84,7 +82,15 @@ public class ElseIfStatementPractice {
         // else: "Underweight"
         double bmi = 22.5;
         // Your code here:
-
+        if (bmi >= 30) {
+            System.out.println("Obese");
+        } else if (bmi >= 25) {
+            System.out.println("Overweight");
+        } else if (bmi >= 18.5) {
+            System.out.println("Noremal");
+        } else {
+            System.out.println("Underweight");
+        }
 
 
         // TODO 5: Day Type
@@ -94,7 +100,13 @@ public class ElseIfStatementPractice {
         // else: "Invalid day"
         int day = 3; // 1=Sunday, 2=Monday, etc.
         // Your code here:
-
+        if (day == 1 || day == 7) {
+            System.out.println("Weekend");
+        } else if (day >= 2 || day <= 6) {
+            System.out.println("Weekday");
+        } else {
+            System.out.println("Invalid day");
+        }
 
         // TODO 6: Traffic Light
         // Write if-else if-else for traffic light colors:
@@ -104,7 +116,15 @@ public class ElseIfStatementPractice {
         // else: "Invalid color"
         String lightColor = "yellow";
         // Your code here:
-
+        if (lightColor.equals("red")) {
+            System.out.println("Stop");
+        } else if (lightColor.equals("yellow")) {
+            System.out.println("Caution");
+        } else if (lightColor.equals("green")) {
+            System.out.println("Go");
+        } else {
+            System.out.println("Invalid Color");
+        }
 
         // TODO 7: Discount Rate
         // Write if-else if-else for purchase discounts:
@@ -114,7 +134,15 @@ public class ElseIfStatementPractice {
         // else: "No discount"
         double purchaseAmount = 750.0;
         // Your code here:
-
+        if (purchaseAmount >= 1000) {
+            System.out.println("20% discount");
+        }else if (purchaseAmount >= 500) {
+            System.out.println("10% discount");
+        }else if (purchaseAmount >= 100) {
+            System.out.println("5% discount");
+        }else {
+            System.out.println("No discount");
+        }
 
         // TODO 8: Speed Category
         // Write if-else if-else for vehicle speed:
@@ -125,7 +153,17 @@ public class ElseIfStatementPractice {
         // else: "Stopped"
         int speed = 95;
         // Your code here:
-
+        if (speed >= 120) {
+            System.out.println("Very fast");
+        }else if (speed > 80) {
+            System.out.println("Fast");
+        }else if (speed > 50) {
+            System.out.println("Moderate");
+        }else if (speed > 0) {
+            System.out.println("Slow");
+        } else {
+            System.out.println("Stopped");
+        }
 
         // TODO 9: Password Strength
         // Write if-else if-else for password strength:
@@ -135,7 +173,15 @@ public class ElseIfStatementPractice {
         // else: "Weak"
         String password = "mypassword";
         // Your code here:
-
+        if(password.length() >= 12){
+            System.out.println("Very Strong");
+        }else if(password.length() >= 8){
+            System.out.println("Strong");
+        }else if(password.length() >= 6){
+            System.out.println("Moderate");
+        }else{
+            System.out.println("Weak");
+        }
 
         // TODO 10: Student Performance
         // Write if-else if-else combining score and attendance:
@@ -146,9 +192,19 @@ public class ElseIfStatementPractice {
         int studentScore = 88;
         int attendance = 90;
         // Your code here:
+        if(studentScore >= 90 && attendance >= 95){
+            System.out.println("Excellent");
+        }else if(studentScore >= 80 && attendance >= 85){
+            System.out.println("Good");
+        }else if(studentScore >= 70 && attendance >= 75){
+            System.out.println("Satisfactory");
+        }else{
+            System.out.println("Needs improvement");
+        }
 
     }
 }
+
 
 /**
  * SYNTAX REMINDER:
